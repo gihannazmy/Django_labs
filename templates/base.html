@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{%block title%}Base Page{%endblock%}</title>
+  <link rel="stylesheet" href="{%static 'css/base.css'%}">
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Account</a></li>
+  <li><a href="#contact">Trainee</a></li>
+  <li><a href="#contact">Track</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+{%block content%}{%endblock%}
+</body>
+</html>
+
+
