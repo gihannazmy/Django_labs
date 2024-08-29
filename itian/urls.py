@@ -16,13 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from track.views import *
+from trainee.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Tracks/',tracks_list,name='tracks_list'),
-    path('Tracks/create',track_create,name='track_create'),
-    path('Tracks/update',track_update,name='track_update'),
-    path('Tracks/details',track_details,name='track_details'),
-    path('Tracks/delete',track_delete,name='track_delete'),
-
+    path('Trainees/',trainees_list,name='trainees_list'),
 ]
